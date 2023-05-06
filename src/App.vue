@@ -36,6 +36,7 @@ export default {
 
   async created() {
     await this.useFetch.getData()
+    console.log('secret', import.meta.env.VITE_SECRET)
   },
 
   computed: {
