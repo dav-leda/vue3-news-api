@@ -3,7 +3,7 @@
 
   <h1>Tech News</h1>
 
-  <p>secr: {{ secret }}</p>
+  <p>sec: {{ secret }}</p>
   
   <div class="cards">
     
