@@ -1,5 +1,6 @@
 {
   "name": "vue3-news-api",
+  "homepage": "https://dav-leda.github.io/vue3-news-api/",
   "version": "0.0.0",
   "private": true,
   "scripts": {

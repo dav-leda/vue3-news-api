@@ -40,7 +40,7 @@ export default {
 
   computed: {
     articles() {
-      return this.useFetch.data.articles
+      return this.useFetch.data?.articles
     },
     error() {
       return this.useFetch.error
