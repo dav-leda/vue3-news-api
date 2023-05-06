@@ -2,22 +2,25 @@
 <template>
 
   <h1>Tech News</h1>
+
+  <p>sec: {{ secret }}</p>
   
   <div class="cards">
-
+    
     <div v-if="loading" class="spinner"></div>
-
+    
     <ErrorMessage v-if="error" :error="error"/>
-
+    
     <NewsCard v-else
-      v-for="(article, index) in articles" :key="index"
-      :article="article"
+    v-for="(article, index) in articles" :key="index"
+    :article="article"
     />
-
+    
   </div>
 </template>
 
 <script>
+
 
 import useFetch from './utils/useFetch'
 
@@ -31,12 +34,12 @@ export default {
   },
 
   data: () => ({ 
-    useFetch
+    useFetch,
+    secret: import.meta.env.VITE_SECRET
   }),
 
   async created() {
     await this.useFetch.getData()
-    console.log('secret', import.meta.env.VITE_SECRET)
   },
 
   computed: {
