@@ -19,10 +19,14 @@
 
 <script>
 
+import { reactive, computed } from 'vue'
+
 import useFetch from './utils/useFetch'
 
 import NewsCard from './components/NewsCard.vue'
 import ErrorMessage from './components/ErrorMessage.vue'
+
+
 
 export default {
 
