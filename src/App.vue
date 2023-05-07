@@ -38,7 +38,7 @@ export default defineComponent({
 
   async created() {
     await this.useFetch.getData()
-    console.log('dev')
+    console.log('test action')
   },
 
   computed: {
