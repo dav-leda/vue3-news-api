@@ -21,25 +21,26 @@
 
 <script>
 
+import { defineComponent } from 'vue'
 
 import useFetch from './utils/useFetch'
 
 import NewsCard from './components/NewsCard.vue'
 import ErrorMessage from './components/ErrorMessage.vue'
 
-export default {
+export default defineComponent({
 
   components: {
     NewsCard, ErrorMessage
   },
 
   data: () => ({ 
-    useFetch,
-    secret: import.meta.env.VITE_SECRET
+    useFetch
   }),
 
   async created() {
     await this.useFetch.getData()
+    console.log('dev')
   },
 
   computed: {
@@ -53,7 +54,7 @@ export default {
       return this.useFetch.loading
     }
   }
-}
+})
 
 </script>
 

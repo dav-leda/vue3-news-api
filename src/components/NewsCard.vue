@@ -24,10 +24,9 @@
 
 <script>
 
-export default {
+import { defineComponent } from 'vue'
 
-  components: {
-  },
+export default defineComponent({
 
   props: {
     article: {
@@ -37,19 +36,15 @@ export default {
       url: String
     }
   },
-
   computed: {
-
     title() {
       return this.article?.title?.substring(0, 100) + '...'
     },
-
     description() {
       return this.article?.description?.substring(0, 120) + '...'
     }
   }
-
-}
+})
 
 </script>
 
