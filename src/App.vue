@@ -2,8 +2,6 @@
 <template>
 
   <h1>Tech News</h1>
-
-  <p>sec: {{ secret }}</p>
   
   <div class="cards">
     
