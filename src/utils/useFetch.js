@@ -1,6 +1,6 @@
 
 
-
+const { VITE_NEWS_API_GH: url } = import.meta.env
 
 
 export default {
@@ -8,7 +8,7 @@ export default {
   data: null,
   error: null,
   loading: true,
-  url: import.meta.env.VITE_NEWS_API_GH,
+  url,
 
 
   async getData() {
