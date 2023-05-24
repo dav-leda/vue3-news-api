@@ -2,14 +2,12 @@
 
 const { VITE_NEWS_API_GH: url } = import.meta.env
 
-
 export default {
 
   data: null,
   error: null,
   loading: true,
   url,
-
 
   async getData() {
 

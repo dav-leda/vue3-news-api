@@ -10,8 +10,8 @@
     <ErrorMessage v-if="error" :error="error"/>
     
     <NewsCard v-else
-    v-for="(article, index) in articles" :key="index"
-    :article="article"
+      v-for="(article, index) in articles" :key="index"
+      :article="article"
     />
     
   </div>
@@ -38,7 +38,6 @@ export default defineComponent({
 
   async created() {
     await this.useFetch.getData()
-    console.log('test action')
   },
 
   computed: {
